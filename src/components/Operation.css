@@ -1,0 +1,156 @@
+/* Reseteo de estilos para asegurar que los márgenes y rellenos no interfieran */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajuste del body para ocupar el 100% del viewport */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #004d40; /* Color del fondo alineado con login y register */
+}
+
+/* Contenedor principal */
+.operation-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #004d40;
+  color: #fff;
+}
+
+/* Encabezado */
+.operation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Header blanco */
+  padding: 10px 20px;
+  color: #004d40; /* Color del texto del header */
+}
+
+.operation-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.operation-header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.operation-header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operation-header nav a {
+  color: #004d40; /* Color del texto de los enlaces */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.operation-header .user-icon {
+  font-size: 1.5em;
+  color: #004d40;
+  display: flex;
+  align-items: center;
+}
+
+.operation-header .user-icon img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Contenido principal */
+.operation-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Formulario y detalles */
+.operation-content {
+  background-color: #333; /* Fondo oscuro del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 800px; /* Ajustar el ancho máximo del contenedor */
+  width: 100%;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-group div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Detalles de la operación */
+.operation-details {
+  background-color: #222; /* Fondo oscuro para detalles de la operación */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 280px; /* Limitar el ancho máximo del contenedor de detalles */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #002d26; /* Footer más oscuro */
+  color: #ffffff;
+}
